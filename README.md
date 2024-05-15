@@ -1,15 +1,15 @@
 # evreka_case
 
 
-##To run application in container:
+## To run application in container:
 
 ```
 docker-compose up -d
 ```
 
-##GraphQL Example Commands
+## GraphQL Example Commands
 
-###Add New Device
+### Add New Device
 
 ```
 mutation {
@@ -25,7 +25,7 @@ mutation {
 }
 ```
 
-###Delete Device
+### Delete Device
 
 ```
 mutation {
@@ -36,7 +36,7 @@ mutation {
 }
 ```
 
-###Device List
+### Device List
 
 ```
 query {
@@ -49,7 +49,7 @@ query {
 }
 ```
 
-###Device Locations
+### Device Locations
 
 ```
 query {
@@ -62,7 +62,7 @@ query {
 }
 ```
 
-###Location History of Device
+### Location History of Device
 
 ```
 query {
