@@ -1,0 +1,20 @@
+version: "3"
+services:
+    db:
+        container_name: testdb
+        image: mysql:5.7
+        ports:
+            - "32001:3306"
+        environment:
+            MYSQL_DATABASE: evreka
+            MYSQL_ROOT_PASSWORD: root
+        volumes:
+        - ./sql_scripts:/docker-entrypoint-initdb.d
+    app:
+        container_name: evreka
+        links:
+            - "db"
+        build: ./
+        ports:
+            - "4444:4444"
+            
